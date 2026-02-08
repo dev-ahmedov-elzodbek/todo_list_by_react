@@ -6,7 +6,7 @@ import TodoApp from "./components/TodoApp.jsx";
 export default function App() {
   const [theme, setTheme] = useState("dark");
 
-  // DARK CLASS TO‘G‘RI BOSHQARILADI
+
   useEffect(() => {
     document.documentElement.classList.toggle("dark", theme === "dark");
   }, [theme]);
@@ -20,7 +20,7 @@ export default function App() {
     <div className="min-h-screen w-full bg-slate-100 text-slate-900 dark:bg-slate-950 dark:text-slate-100">
       <Toaster richColors position="top-right" />
 
-      {/* BACKGROUND */}
+  
       <div className="pointer-events-none fixed inset-0 opacity-30">
         <div
           className="absolute inset-0"
